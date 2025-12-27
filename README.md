@@ -1,8 +1,13 @@
 # ke4ahr.github.io
+
+Hello! 
+
 This is a website for explaining the various software hosted at GitHub.
 
 # rax25kb: https://github.com/ke4ahr/rax25kb/
-CAVEAT: The version numbers are messed up; the order is 1.0.0, 2.0.0, 1.6.1, 1.6.2, and so on.  This is a R(everse) AX.25 KISS Bridge, written in Rust. It is a highly functional, highly capable serial communication system for amateur radio operators. It is capable of operating on Windows, Linux, and anywhere else Cargo can build Rust code. 
+CAVEAT: The version numbers are messed up; the order is 1.0.0, 2.0.0, 1.6.1, 1.6.2, and so on.  
+
+This is a R(everse) AX.25 KISS Bridge, written in Rust. It is a highly functional, highly capable serial communication system for amateur radio operators. It is capable of operating on Windows, Linux, and anywhere else Cargo can build Rust code. 
 
 The 1.0.0 version functions as a shim between a radio with a built-in TNC and a consumer application using TCP port X (X is any port number the user is able to bind to). The shim corrects outgoing KISS packets before they leave the serial port to prevent TNC crashes. The shim also corrects KISS packets as they are recieved from a TASCO chipset TNC in the radio. Enable the PhilFlag to kick in the features to "fix" your radio. This program does not address the TNC bug as a result of hearing an APRS Beacon packet over 76 bytes however. The application supports all varieties of KISS protocol except for SMACK. It has the ability to listen on a loopback, IPv4, or IPv6 TCP port and connect the TCP client with local resources: KISS/XKISS TNCs on serial ports. It also supports interacting with AGW protocol consumers, and can function as a KISS TNC to AGW bridge or vice versa. It has the ability to copy data from one serial port to another, converting a stack of individually attached serial TNCs to a single XKISS interface. It has the ability to dump packets out at AX.25, all modes of KISS, and just as raw serial data. Further, it supports exporting AX.25 data to pcap. Command line arguments override configuration file directives. It's multi-threaded. That is version 1.0.0.
 
