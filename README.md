@@ -9,12 +9,9 @@ The 1.0.0 version functions as a shim between a radio with a built-in TNC and a 
 Version 1.6.2 will perform identically to V1.0.0 with the same configuration file. Verson 1.6.2 introduces a cross-connect capability in the configuration file which permits any to any connections with the exception that they are one-to-one connections.  With a newer-style configuration, One TCP port listener on port 8001 can be connected to one serial port, or one KISS TNC, or one XKISS TNC on a serial port carrying one or more XKISS TNCs interconnected. In this way, it can be used to connect a KISS-aware application to an XKISS stack on a single serial port. Using serial ports, it can convert several standard KISS TNCs into a virtual XKISS TNC running at any standard serial rate, including the extended USB serial port speeds up to 4 MHz. Likewise, any combination of AGW can be cross-connected to KISS, XKISS, or TCP on individual ports. If you want to stack up four TNCs and run four different applications, you can configure rax25kb to listen on 127.0.0.1:8001, 8002, 8003, and 8004 and have each of those correspond to XKISS address 0, 1, 2, and 3 on /dev/USBtty0 or COM1:. Of course, it also has the ability to dump any of those into a log file. Your imagination, CPU, and funding are the only limitations. Version 1.6.2 is also multi-threaded. 
 
 # PyFBB: https://github.com/ke4ahr/PyFBB/
-This is a library implementing the BBS Forwarding Protocol standard for amateur radio packet radio BBSs (and Winlink) based off of F6FBB's document on the BBS Forwarding Protocol, then W0RLI's 1998 and 2012 documents, as well as Winlink's BF2 forwarding standard. This library is an attempt to have 100% coverage in the message passing framework in Python. It is somewhat limited as I have other libraries in the works for the pieces it is missing.
+This is a library implementing the BBS Forwarding Protocol standard for amateur radio packet radio BBSs (and Winlink) based off of F6FBB's document on the BBS Forwarding Protocol, then W0RLI's 1998 and 2012 documents, as well as Winlink's BF2 forwarding standard. This library is an attempt to have 100% coverage in the message passing framework in Python. It is somewhat limited as I have other libraries in the works for the pieces it is missing. This library is named for F6FBB, without whom the idea for any of this packet-related stuff would not exist. It has no connection to F6FBB other than it is based on a document he wrote, and a packet radio BBS I used (and configured) years ago. 
 
 My email is my callsign at a common Google product. 
 
 73 (Best Regards), and I look forward to hearing from you. 
 
-
-
-# PyFBB
